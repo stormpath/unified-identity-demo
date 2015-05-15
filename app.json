@@ -3,5 +3,10 @@
   "description": "A simple unified user identity demo app, built with Stormpath and OAuth.io.",
   "repository": "https://github.com/stormpath/unified-identity-demo",
   "logo": "https://stormpath.readthedocs.org/en/latest/_images/stormpath-logo.png",
-  "keywords": ["node", "express", "social", "identity", "security", "authentication"]
+  "keywords": ["node", "express", "social", "identity", "security", "authentication"],
+  "success_url": "/",
+  "addons": [
+    "oauthio",
+    "stormpath"
+  ]
 }
