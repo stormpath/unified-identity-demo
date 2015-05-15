@@ -1,0 +1,15 @@
+h1, h2 {
+  margin-bottom: 2em;
+}
+
+footer p {
+  padding-top: 2em;
+}
+
+.error {
+  margin-top: -3em;
+}
+
+#error {
+  margin-left: 1em;
+}
