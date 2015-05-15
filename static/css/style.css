@@ -13,3 +13,13 @@ footer p {
 #error {
   margin-left: 1em;
 }
+
+.button-holders .row {
+  margin-bottom: 1em;
+  text-align: center;
+}
+
+.button-holders button {
+  margin-left: auto;
+  margin-right: auto;
+}
