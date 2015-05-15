@@ -1,0 +1,64 @@
+extends base
+
+block vars
+  - var title = 'Home'
+
+block head
+  script.
+    function register() {
+      User.signup({
+        firstname: $('#firstName').val(),
+        lastname: $('#lastName').val(),
+        email: $('#email').val(),
+        password: $('#password').val()
+      }).done(function(user) {
+        console.log(user.data);
+        $('.error').hide();
+      }).fail(function(err) {
+        console.log(err);
+        $('.error').show();
+        $('#error').text(err.responseJSON.message);
+      });
+      return false;
+    }
+
+block body
+  .container
+    h1.text-center Unified Identity Demo
+    .row
+      .jumbotron.col-xs-offset-2.col-xs-8
+        p.
+          Thanks for checking out this demo! Create an account below to continue
+          onto the next step =)
+    .row
+      .col-xs-offset-3.col-xs-6
+        h2 Create Account
+        .alert.alert-danger.error.col-xs-offset-3.col-xs-9(role="alert")
+          span.glyphicon.glyphicon-exclamation-sign(aria-hidden="true")
+          span.sr-only
+          span#error
+        form.form-horizontal(onsubmit="return register()")
+          .form-group
+            label.col-xs-3.control-label(for="firstName") First Name
+            div.col-xs-9
+              input.form-control#firstName(placeholder="First Name", required=true)
+          .form-group
+            label.col-xs-3.control-label(for="lastName") Last Name
+            div.col-xs-9
+              input.form-control#lastName(placeholder="Last Name", required=true)
+          .form-group
+            label.col-xs-3.control-label(for="email") Email
+            div.col-xs-9
+              input.form-control#email(type="email", placeholder="Email", required=true)
+          .form-group
+            label.col-xs-3.control-label(for="password") Password
+            .col-sm-9
+              input.form-control#password(type="password", placeholder="Password", required=true)
+          .form-group
+            .col-xs-offset-3.col-xs-9
+              button.btn.btn-default(type="submit") Register
+    footer
+      p.text-center.
+        Built by Randall @ <a href="https://stormpath.com/">Stormpath</a>.
+  script.
+    $(function() { $('.error').hide(); });

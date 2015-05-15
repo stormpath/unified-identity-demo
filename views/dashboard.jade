@@ -1,0 +1,50 @@
+extends base
+
+block vars
+  - var title = 'Dashboard'
+
+block head
+  script.
+    function link(provider) {
+      var user = User.getIdentity();
+      OAuth.popup(provider).then(function(p) {
+        return user.addProvider(p);
+      }).done(function() {
+        $('#' + provider).attr('disabled', 'disabled');
+      });
+    }
+
+block body
+  .container
+    h1.text-center Unified Identity Demo - Dashboard
+    .row
+      .jumbotron.col-xs-offset-2.col-xs-8
+        p.
+          Link your social accounts below. Once added, you can log in with any
+          of the accounts using a single, unified, user model. All session
+          handling / data storage / OAuth / etc. is taken care of transparently.
+    .row
+      .col-xs-offset-1.col-xs-10
+        h2 Link Accounts
+        .button-holders
+          .row
+            button.btn.btn-success.btn-lg#facebook(type="button", onclick="link('facebook')") Link Facebook
+          .row
+            button.btn.btn-success.btn-lg#google(type="button", onclick="link('google')") Link Google
+          .row
+            button.btn.btn-success.btn-lg#twitter(type="button", onclick="link('twitter')") Link Twitter
+    footer
+      p.text-center.
+        Built by Randall @ <a href="https://stormpath.com/">Stormpath</a>.
+  script.
+    // Visually disable the social linking buttons for all already-linked
+    // providers.
+    $(function() {
+      var user = User.getIdentity();
+      for (var i = 0; i < user.providers.length; i++) {
+        $('#' + user.providers[i]).attr('disabled', 'disabled');
+      }
+    });
+    if (!User.isLogged()) {
+      window.location = '/';
+    }
