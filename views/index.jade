@@ -12,8 +12,8 @@ block head
         email: $('#email').val(),
         password: $('#password').val()
       }).done(function(user) {
-        console.log(user.data);
         $('.error').hide();
+        window.location = '/dashboard';
       }).fail(function(err) {
         console.log(err);
         $('.error').show();
