@@ -14,3 +14,17 @@ using [Heroku][] to easily host the web application for free.
 
 The guide below explains how to make this example application run in your own
 environment.
+
+
+## What it Looks Like
+
+Here's what the application looks like once deployed:
+
+![Demo](https://raw.githubusercontent.com/stormpath/unified-identity-demo/master/static/images/demo.gif)
+
+This demo application lets you:
+
+- Create an account.
+- Enter a private dashboard page.
+- Link your Facebook / Twitter / Google social accounts to create a 'unified'
+  identity.
