@@ -97,6 +97,21 @@ this:
 
 ![OAuth.io Dashboard][]
 
+Next, click the *"Users Overview"* tab on the left, then click the *"Enable with
+Stormpath"* button.  You should see a page like this:
+
+![OAuth.io Stormpath Configuration][]
+
+- For the *"Stormpath application name"* box, enter your Heroku app name.
+- For the *"Stormpath public key"* box, enter your `STORMPATH_API_KEY_ID` value
+  that you wrote down earlier.
+- For the *"Stormpath secret"* box, enter your `STORMPATH_API_KEY_SECRET` value
+  that you wrote down earlier.
+
+If you enter these values successfully, you should be greeted by a success page
+that looks like this:
+
+![OAuth.io Stormpath Success][]
 
   [Stormpath]: https://stormpath.com/ "Stormpath User Management API"
   [OAuth.io]: https://oauth.io/home "OAuth.io - Simple OAuth Integration"
@@ -104,3 +119,5 @@ this:
   [Heroku Install Page]: https://raw.githubusercontent.com/stormpath/unified-identity-demo/master/static/images/heroku-install-page.png "Heroku Install Page"
   [Heroku Toolbelt]: https://toolbelt.heroku.com/ "Heroku Toolbelt"
   [OAuth.io Dashboard]: https://raw.githubusercontent.com/stormpath/unified-identity-demo/master/static/images/oauthio-dashboard.png "OAuth.io Dashboard Page"
+  [OAuth.io Stormpath Configuration]: https://raw.githubusercontent.com/stormpath/unified-identity-demo/master/static/images/oauthio-stormpath.png "OAuth.io Stormpath Configuration"
+  [OAuth.io Stormpath Success]: https://raw.githubusercontent.com/stormpath/unified-identity-demo/master/static/images/oauthio-stormpath-success.png "OAuth.io Stormpath Success"
