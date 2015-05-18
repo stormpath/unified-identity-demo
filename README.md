@@ -30,6 +30,25 @@ This demo application lets you:
   identity.
 
 
+## Installation
+
+To install this demo app and get started, you'll first need to create a
+[Heroku][] account if you haven't already.
+
+Next, you'll want to click the big *"Deploy to Heroku"* button at the top of
+this README -- this should prompt you to create a new (*free*) Heroku
+application which will automatically run and configure itself with both the
+[Stormpath][] and [OAuth.io][] addons.
+
+You should see a page that looks something like this:
+
+![Heroku Install Page][]
+
+To launch your new Heroku app, just click the *"Deploy for Free"* button at the
+bottom of the page =)
+
+
   [Stormpath]: https://stormpath.com/ "Stormpath User Management API"
   [OAuth.io]: https://oauth.io/home "OAuth.io - Simple OAuth Integration"
   [Heroku]: https://www.heroku.com/ "Heroku"
+  [Heroku Install Page]: https://raw.githubusercontent.com/stormpath/unified-identity-demo/master/static/images/heroku-install-page.png "Heroku Install Page"
