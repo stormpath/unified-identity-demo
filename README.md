@@ -28,3 +28,8 @@ This demo application lets you:
 - Enter a private dashboard page.
 - Link your Facebook / Twitter / Google social accounts to create a 'unified'
   identity.
+
+
+  [Stormpath]: https://stormpath.com/ "Stormpath User Management API"
+  [OAuth.io]: https://oauth.io/home "OAuth.io - Simple OAuth Integration"
+  [Heroku]: https://www.heroku.com/ "Heroku"
