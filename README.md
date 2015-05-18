@@ -133,6 +133,30 @@ following:
 
 ![OAuth.io Social][]
 
+Now you're ready to go!
+
+
+## Testing It Out
+
+To test out your new unified identity demo, do the following.
+
+Firstly, open up your web interface:
+
+```console
+$ heroku open --app random-demo-app
+```
+
+This will open up the home page of your Heroku app.
+
+Next, type in some user information and create an account!  This user
+information will be stored in Stormpath securely -- no database necessary!
+
+Next, you'll be brought to a simple dashboard page where you can click the
+Social buttons to 'link' your social accounts to your main account.
+
+When this process is finished, you'll have a fully unified user identity!
+Pretty neat, right?
+
 
   [Stormpath]: https://stormpath.com/ "Stormpath User Management API"
   [OAuth.io]: https://oauth.io/home "OAuth.io - Simple OAuth Integration"
