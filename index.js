@@ -1,18 +1,13 @@
 'use strict';
 
-var OAuth = require('oauthio');
 var express = require('express');
-
-// Initialization
-OAuth.initialize(process.env.OAUTHIO_PUBLIC_KEY, process.env.OAUTHIO_SECRET_KEY);
 
 // Globals
 var app = express();
+app.locals.oauthio_public_key = process.env.OAUTHIO_PUBLIC_KEY;
 
 // Settings
 app.set('view engine', 'jade');
-
-app.locals.oauthio_public_key = process.env.OAUTHIO_PUBLIC_KEY;
 
 // Middleware
 app.use('/static', express.static('./static'));
