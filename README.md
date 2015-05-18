@@ -113,6 +113,27 @@ that looks like this:
 
 ![OAuth.io Stormpath Success][]
 
+Next, you'll need to go create some social apps!  This is required in order to
+test out the unified identity bit of this demo.
+
+To do this, click on the *"Integrated APIs"* tab in the OAuth.io interface, and
+then add a Google App, a Facebook App, and a Twitter App (*this demo requires
+all three*).
+
+Through this process you'll need to input your already-created credentials.
+This means you'll need to first go out and create an actual Google, Facebook,
+and Twitter app before continuing.
+
+**NOTE**: When you're in the OAuth.io interface adding these apps, there are
+instructions which tell you how to create these apps and set them up if you
+haven't already done so.
+
+Finally, after setting up your social apps, you should see a page like the
+following:
+
+![OAuth.io Social][]
+
+
   [Stormpath]: https://stormpath.com/ "Stormpath User Management API"
   [OAuth.io]: https://oauth.io/home "OAuth.io - Simple OAuth Integration"
   [Heroku]: https://www.heroku.com/ "Heroku"
@@ -121,3 +142,4 @@ that looks like this:
   [OAuth.io Dashboard]: https://raw.githubusercontent.com/stormpath/unified-identity-demo/master/static/images/oauthio-dashboard.png "OAuth.io Dashboard Page"
   [OAuth.io Stormpath Configuration]: https://raw.githubusercontent.com/stormpath/unified-identity-demo/master/static/images/oauthio-stormpath.png "OAuth.io Stormpath Configuration"
   [OAuth.io Stormpath Success]: https://raw.githubusercontent.com/stormpath/unified-identity-demo/master/static/images/oauthio-stormpath-success.png "OAuth.io Stormpath Success"
+  [OAuth.io Social]: https://raw.githubusercontent.com/stormpath/unified-identity-demo/master/static/images/oauthio-social.png "OAuth.io Social"
